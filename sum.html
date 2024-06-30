@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 140px;
+            margin: 100px;
+            background-color: hotpink;
+            padding-left: 10px;
+        }
+        .box
+        {
+            border:none;
+            border-bottom: 2px;
+            background-color: blueviolet;
+            color: whlite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Value A
+        <input type="Number" class="box" id="txt1">
+        <br>
+        Value B
+        <input type="Number" class="box" id="txt2">
+        <br>
+        Result
+        <input type="text" class="box" id="txt3">
+        <br>
+        <button onclick="Sum()">Sum</button>
+    </div>
+    <script>
+        function Sum()
+        {
+            var a,b,c;
+            a=document.getElementById("txt1").value;
+            b=document.getElementById("txt2").value;
+            
+            s=parseFloat(a) + parseFloat(b);
+            document.getElementById("txt3").value=s;
+        }
+    </script>
+</body>
+</html>
